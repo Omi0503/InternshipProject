@@ -1,7 +1,7 @@
 <template>
   <div>
     <div>
-      <h4>Hi, {{ userInfo.firstName }} {{ userInfo.lastName }}</h4>
+      <h1>Hi, {{ userInfo.firstName }} {{ userInfo.lastName }}</h1>
       <button @click="logOutFunction()">Log Out</button>
     </div>
     <h2>Information table</h2>

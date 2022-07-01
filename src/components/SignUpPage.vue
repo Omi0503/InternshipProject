@@ -12,7 +12,9 @@
           placeholder="Last Name"
           v-model="signUpValues.lastName"
         />
+        <br />
         <div>
+          <br />
           <label>Gender</label>
           <input
             type="radio"
@@ -29,22 +31,27 @@
           />
           <label for="Female">Female</label>
         </div>
+        <br />
         <input type="text" placeholder="Email" v-model="signUpValues.emailId" />
+        <br />
+        <br />
         <input
           type="password"
           placeholder="Password"
           v-model="signUpValues.password"
         />
         <input
-          type="text"
+          type="password"
           placeholder="Confirm password"
           v-model="signUpValues.cPassword"
         />
       </div>
+      <br />
       <button>SignUp</button>
     </form>
-    <button @click="resetSignUpValues()">Reset</button>
-    <router-link :to="{name: 'home'}">
+    <br />
+    <button style="margin-right: 20px" @click="resetSignUpValues()">Reset</button>
+    <router-link :to="{ name: 'home' }">
       <button @click="resetSignUpValues()">Cancel</button>
     </router-link>
   </div>

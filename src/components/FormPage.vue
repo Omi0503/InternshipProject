@@ -12,6 +12,8 @@
           placeholder="Last Name"
           v-model="formValues.lastName"
         />
+        <br />
+        <br />
         <div>
           <label>Gender</label>
           <input
@@ -29,15 +31,18 @@
           />
           <label for="Female">Female</label>
         </div>
+        <br />
         <input
           type="text"
           placeholder="Email Id"
           v-model="formValues.emailId"
         />
       </div>
+      <br />
       <button>{{ buttonName }}</button>
     </form>
-    <button @click="resetFormValues()">Reset</button>
+    <br />
+    <button style="margin-right: 20px" @click="resetFormValues()">Reset</button>
     <router-link :to="{name: 'user'}">
       <button @click="resetFormValues()">Cancel</button>
     </router-link>
